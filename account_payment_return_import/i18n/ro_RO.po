@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: account-payment (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-22 02:02+0000\n"
-"PO-Revision-Date: 2018-02-02 14:11+0000\n"
+"POT-Creation-Date: 2017-11-25 01:18+0000\n"
+"PO-Revision-Date: 2017-11-26 10:00+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
-"Language-Team: Catalan (Spain) (http://www.transifex.com/oca/OCA-account-payment-8-0/language/ca_ES/)\n"
+"Language-Team: Romanian (Romania) (http://www.transifex.com/oca/OCA-account-payment-8-0/language/ro_RO/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: ca_ES\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #. module: account_payment_return_import
 #: code:addons/account_payment_return_import/wizard/payment_return_import.py:268
@@ -79,7 +79,7 @@ msgstr ""
 #. module: account_payment_return_import
 #: view:payment.return.import:account_payment_return_import.account_payment_return_import_view
 msgid "Cancel"
-msgstr "Cancel·la"
+msgstr ""
 
 #. module: account_payment_return_import
 #: code:addons/account_payment_return_import/wizard/payment_return_import.py:144
@@ -92,17 +92,17 @@ msgstr ""
 #. module: account_payment_return_import
 #: field:payment.return.import,create_uid:0
 msgid "Created by"
-msgstr "Creat per"
+msgstr ""
 
 #. module: account_payment_return_import
 #: field:payment.return.import,create_date:0
 msgid "Created on"
-msgstr "Creat a"
+msgstr ""
 
 #. module: account_payment_return_import
 #: field:payment.return.import,display_name:0
 msgid "Display Name"
-msgstr "Nom visible"
+msgstr ""
 
 #. module: account_payment_return_import
 #: help:payment.return.import,data_file:0
@@ -151,22 +151,22 @@ msgstr ""
 #. module: account_payment_return_import
 #: field:payment.return.import,journal_id:0
 msgid "Journal"
-msgstr "Diari"
+msgstr "jurnal"
 
 #. module: account_payment_return_import
 #: field:payment.return.import,__last_update:0
 msgid "Last Modified on"
-msgstr "Darrera modificació en"
+msgstr ""
 
 #. module: account_payment_return_import
 #: field:payment.return.import,write_uid:0
 msgid "Last Updated by"
-msgstr "Darrera actualització per"
+msgstr ""
 
 #. module: account_payment_return_import
 #: field:payment.return.import,write_date:0
 msgid "Last Updated on"
-msgstr "Darrera actualització el"
+msgstr ""
 
 #. module: account_payment_return_import
 #: field:payment.return.import,match_after_import:0

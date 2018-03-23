@@ -3,21 +3,20 @@
 # * account_due_list_days_overdue
 # 
 # Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2016
-# Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2017
+# Carlos Hormigo, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-18 01:15+0000\n"
-"PO-Revision-Date: 2017-11-18 01:15+0000\n"
-"Last-Translator: Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2017\n"
-"Language-Team: Indonesian (https://www.transifex.com/oca/teams/23907/id/)\n"
+"POT-Creation-Date: 2017-12-22 02:02+0000\n"
+"PO-Revision-Date: 2017-12-22 02:02+0000\n"
+"Last-Translator: Carlos Hormigo, 2018\n"
+"Language-Team: Catalan (Spain) (https://www.transifex.com/oca/teams/23907/ca_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: id\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ca_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: account_due_list_days_overdue
 #: model:ir.model,name:account_due_list_days_overdue.model_account_overdue_term
@@ -27,22 +26,22 @@ msgstr ""
 #. module: account_due_list_days_overdue
 #: field:account.overdue.term,create_uid:0
 msgid "Created by"
-msgstr "Dibuat oleh"
+msgstr "Creat per"
 
 #. module: account_due_list_days_overdue
 #: field:account.overdue.term,create_date:0
 msgid "Created on"
-msgstr "Dibuat pada"
+msgstr "Creat a"
 
 #. module: account_due_list_days_overdue
 #: field:account.move.line,days_overdue:0
 msgid "Days overdue"
-msgstr "Jatuh tempo hari"
+msgstr ""
 
 #. module: account_due_list_days_overdue
 #: field:account.overdue.term,display_name:0
 msgid "Display Name"
-msgstr "Nama Tampilan"
+msgstr "Nom visible"
 
 #. module: account_due_list_days_overdue
 #: field:account.overdue.term,from_day:0
@@ -52,32 +51,32 @@ msgstr ""
 #. module: account_due_list_days_overdue
 #: field:account.overdue.term,id:0
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: account_due_list_days_overdue
 #: model:ir.model,name:account_due_list_days_overdue.model_account_move_line
 msgid "Journal Items"
-msgstr "Journal Items"
+msgstr ""
 
 #. module: account_due_list_days_overdue
 #: field:account.overdue.term,__last_update:0
 msgid "Last Modified on"
-msgstr "Terakhir Dimodifikasi pada"
+msgstr "Darrera modificació en"
 
 #. module: account_due_list_days_overdue
 #: field:account.overdue.term,write_uid:0
 msgid "Last Updated by"
-msgstr "Diperbaharui oleh"
+msgstr "Darrera actualització per"
 
 #. module: account_due_list_days_overdue
 #: field:account.overdue.term,write_date:0
 msgid "Last Updated on"
-msgstr "Diperbaharui pada"
+msgstr "Darrera actualització el"
 
 #. module: account_due_list_days_overdue
 #: field:account.overdue.term,name:0
 msgid "Name"
-msgstr "Nama"
+msgstr "Nom"
 
 #. module: account_due_list_days_overdue
 #: view:account.overdue.term:account_due_list_days_overdue.view_account_overdue_term_form
