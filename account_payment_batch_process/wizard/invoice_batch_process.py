@@ -133,9 +133,9 @@ class AccountRegisterPayments(models.TransientModel):
                 for inv in invoices:
                     lines.append((0, 0, {'partner_id': inv.partner_id.id,
                                          'invoice_id': inv.id,
-                                         'balance_amt': inv.residual or 0.0,
+                                         'balance_amt': inv.residual_signed or 0.0,
                                          'receiving_amt': 0.0,
-                                         'payment_difference': inv.residual or 0.0,  # noqa
+                                         'payment_difference': inv.residual_signed or 0.0,  # noqa
                                          'handling': 'open'
                                          }))
                 rec.update({'invoice_customer_payments': lines,
@@ -144,7 +144,7 @@ class AccountRegisterPayments(models.TransientModel):
                 for inv in invoices:
                     lines.append((0, 0, {'partner_id': inv.partner_id.id,
                                          'invoice_id': inv.id,
-                                         'balance_amt': inv.residual or 0.0,
+                                         'balance_amt': inv.residual_signed or 0.0,
                                          'paying_amt': 0.0}))
                 rec.update({'invoice_payments': lines, 'is_customer': False})
         else:
@@ -154,9 +154,7 @@ class AccountRegisterPayments(models.TransientModel):
                 raise UserError(_("You cannot mix customer invoices and vendor"
                                   " bills in a single payment."))
 
-        total_amount = sum(inv.residual *
-                           INV_TO_PAYM_SIGN[inv.type]
-                           for inv in invoices)
+        total_amount = sum(inv.residual_signed for inv in invoices)
         rec.update({
             'amount': abs(total_amount),
             'currency_id': invoices[0].currency_id.id,
@@ -205,7 +203,7 @@ class AccountRegisterPayments(models.TransientModel):
                                         ' Amount and Check amount does not'
                                         ' match!'))
             for paym in self.invoice_customer_payments:
-                if paym.receiving_amt > 0:
+                if paym.receiving_amt != 0:
                     paym.payment_difference = paym.balance_amt - paym.receiving_amt  # noqa
                     partner_id = str(paym.invoice_id.partner_id.id)
                     if partner_id in data:
