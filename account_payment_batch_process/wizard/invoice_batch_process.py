@@ -253,7 +253,7 @@ class AccountRegisterPayments(models.TransientModel):
                                 'partner_id': partner_id,
                                 'partner_type': INV_TO_PARTN[
                                     paym.invoice_id.type],
-                                'total': paym.receiving_amt,
+                                'total': abs(paym.receiving_amt),
                                 'payment_method_id':
                                     paym.payment_method_id and
                                     paym.payment_method_id.id or False,
